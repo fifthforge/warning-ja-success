@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Notable&display=swap');
+
+html {
+    font-size: 62.5;
+}
+
+h1 {
+    font-family: 'Notable', sans-serif;
+}
+
+p {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 800px;
+
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.ilmoitukset {
+    min-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.ilmoitukset>* {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.ilmoitukset>*:last-child {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 426px) {
+    .ilmoitukset {
+        flex-direction: column;
+
+    }
+
+    .ilmoitukset>* {
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .ilmoitukset>*:last-child {
+        padding: 1rem;
+    }
+}
